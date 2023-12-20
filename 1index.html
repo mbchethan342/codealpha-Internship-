@@ -2,25 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"> <!-- Fixed typo in user-scalable -->
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/2style.css"> <!-- Ensure the correct path to your CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2style.css">
+    <title>Age Calculator</title>
 </head>
-<body>
-    <div class="age-calc">
+<body bgcolor="aqua">
+    <div class="container">
         <h1>Age Calculator</h1>
-        <div id="disBlock"> <!-- Corrected the case of "disblock" to "disBlock" for consistency -->
-            <div id="age"></div>
-            <div id="time"></div>
-        </div>
-        <div>
-            <label for="dobDate">Enter Your Date Of Birth</label> <!-- Added "for" attribute for better accessibility -->
-            <input type="date" id="dobDate" name=""><br>
-            <button type="button" id="calBtn">Calculate</button>
-            <button type="reset" id="resetBtn">Reset</button>
-        </div>
+        <label for="birthDate">Enter your birthdate:</label>
+        <input type="date" id="birthDate">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <p id="result"></p>
     </div>
 
-    <script type="text/javascript" src="js/2script.js"></script>
+    <script src="2script.js"></script>
 </body>
 </html>
